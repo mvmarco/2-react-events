@@ -1,6 +1,8 @@
 // #################################
 // EVENTS
 // #################################
+
+// check the list of the React events here: https://flaviocopes.com/react-events/
 /* 
   React event listener are handled in a simpler way.
   instead of doing the querySelector for a button for instance, and then doing
