@@ -5,9 +5,14 @@
   React event listener are handled in a simpler way.
   instead of doing the querySelector for a button for instance, and then doing
   .addEventListener('click', handleClick). In React we do as follow:
+  const sayHelloHandler = (user) => console.log(`hello ${user}`);
+  <button onClick={sayHelloHandler}>Click</button>
 
-  <button onClick={.......here we add the function......}>Click</button>
-
+  but as soon as we start doing: 
+  <button onClick={sayHelloHandler('Marco')}>Click</button>
+  in other words putting a parentesis to our function, which is an invocation, you are calling
+  the function. In the browser the results of the click the updated with "hello Marco" but the
+  click event stops working because we returned it.
 */
 
 import './App.css';
